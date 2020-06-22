@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bootstrap을 배워보자</title>
+	<link rel="stylesheet" href="../css/all.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/03.bootstrap.css">
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</head>
+<body style="height: 10000px;">
+	<!-- 
+		1. color: primary/info/danger/warning/success/dark/light/secondary
+				- bg-dark, text-primary
+		2. position: position-absolute/position-relative/position-fixed
+		3. display: d-flex/d-block/d-inline/d-inline-block/d-none
+		4. flex: justify-content-center/evenly/around/between, align-items-center/start/end
+		5. width(%): w-25/w-50/w-75/w-100 
+		6. height(%): h-25/h-50/h-75/h-100
+		7. max-width(%): mw-25/mw-50/mw-75/mw-100 
+		8. max-height(%): mh-25/mh-50/mh-75/mh-100
+		9. size: 1(0.25rem)/2(0.5rem)/3(1rem)/4(1.5rem)/5(2rem)
+		10. p-3(padding: 1rem)/pt-3(padding-top: 1rem)/pb-3(padding-bottom: 1rem)/pl-2/pr-4  
+		11. m-3(margin: 1rem)/mt-3(margin-top: 1rem)/mb-3(margin-bottom: 1rem)/ml-2/mr-4
+		12. border: border border-primary
+		13. rounded
+		14. font-weight-bold  
+	-->
+	<header class="bg-dark text-light d-flex justify-content-between align-items-center w-100 position-fixed" style="z-index: 1000;">
+		<div class="logo p-3 font-weight-bold">LOGO</div>
+		<div class="navi-wrap d-flex">
+			<a href="#" class="nav p-3 text-light">HOME</a>
+			<a href="#" class="nav p-3 text-light">Protfolio</a>
+			<a href="#" class="nav p-3 text-light">About</a>
+			<a href="#" class="nav p-3 text-light">Contact</a>
+		</div>
+	</header>
+	<div class="container" style="padding-top: 80px;">
+		<div class="jumbotron">
+			<h2>
+				Bootstrap을 배워보자
+				<small class="text-danger">- getbootstrap.com</small>
+				<hr>
+				<a href="//getbootstrap.com" class="btn btn-primary btn-lg">bootstrap 사이트로 이동하기</a>
+				<a href="//jquery.com" class="btn btn-danger">jQuery 사이트로 이동하기</a>
+			</h2>
+		</div>
+		<div class="border rounded p-3">
+			<a href="#" class="btn btn-primary btn-sm">Primary</a>
+			<a href="#" class="btn btn-info">Info</a>
+			<a href="#" class="btn btn-danger">Danger</a>
+			<a href="#" class="btn btn-success">Success</a>
+			<a href="#" class="btn btn-light">Light</a>
+			<a href="#" class="btn btn-dark">Dark</a>
+			<a href="#" class="btn btn-secondary">Secondary</a>
+			<a href="#" class="btn btn-warning">Warning</a>
+			<a href="#" class="btn btn-outline-primary">Primary</a>
+			<a href="#" class="btn btn-outline-danger">Danger</a>
+		</div>
+		<table class="table table-bordered table-striped table-hover mt-5 text-center">
+			<thead class="thead-dark">
+				<tr>
+					<th>번호</th>
+					<th>제목</th>
+					<th>작성자</th>
+					<th>작성일</th>
+					<th>조회수</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td class="text-left">아버지를 아버지라...</td>
+					<td>홍길동</td>
+					<td>1690-12-11</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td class="text-left">누이를 누이라...</td>
+					<td>홍길순</td>
+					<td>1690-12-11</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td class="text-left">동생을 동생이라...</td>
+					<td>홍길만</td>
+					<td>1690-12-11</td>
+					<td>3</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="border p-3 rounded my-5">
+			<div class="alert alert-primary">제목입니다.</div>
+			<div class="alert alert-secondary">제목입니다.</div>
+			<div class="alert alert-success">제목입니다.</div>
+			<div class="alert alert-dark">제목입니다.</div>
+			<div class="alert alert-info">제목입니다.</div>
+			<div class="alert alert-warning">제목입니다.</div>
+			<code>&lt;section&gt;</code>
+			<var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+			<kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+			<img src="//via.placeholder.com/150x200" class="img-thumbnail">
+			<img src="//via.placeholder.com/200" class="img-thumbnail d-block mx-auto my-5">
+		</div>
+		<div class="alert alert-success alert-sample" role="alert">
+			<button type="button" class="close" onclick="$('.alert-sample').alert('close');">
+				<i class="fa fa-times"></i>
+			</button>
+			<h4 class="alert-heading">Well done!</h4>
+			<p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+			<hr>
+			<p>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+		</div>
+
+
+	</div>
+	<script src="../js/03.bootstrap.js"></script>
+</body>
+</html>
